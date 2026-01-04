@@ -140,6 +140,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Mappa - Dove Siamo */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Dove Siamo</h2>
+          <p className="text-center text-gray-600 mb-8">
+            Via Lodovico Ariosto, 19, 20145 Milano MI
+          </p>
+          <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.5!2d9.1583!3d45.4773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c14d4b8c1b3d%3A0x8b8b8b8b8b8b8b8b!2sVia%20Lodovico%20Ariosto%2C%2019%2C%2020145%20Milano%20MI!5e0!3m2!1sit!2sit!4v1704000000000!5m2!1sit!2sit"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Traslochi Milano Pro - Mappa"
+            ></iframe>
+          </div>
+          <div className="text-center mt-6">
+            <a
+              href="https://maps.app.goo.gl/XTAfeLM2trb48KRfo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              <MapPin className="w-5 h-5" />
+              Apri in Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
