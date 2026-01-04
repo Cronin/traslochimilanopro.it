@@ -1,0 +1,6 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="55" fill="#2563EB" stroke="#1E40AF" stroke-width="2"/>
+  <path d="M60 20L65 45L90 45L70 60L75 85L60 70L45 85L50 60L30 45L55 45L60 20Z" fill="gold"/>
+  <text x="60" y="102" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">QUALITA</text>
+  <text x="60" y="115" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">CERTIFICATA</text>
+</svg>
