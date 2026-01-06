@@ -72,8 +72,8 @@ export default function Testimonials() {
                 </svg>
               ))}
             </div>
-            <span className="font-bold text-xl text-gray-900">4.8/5</span>
-            <span className="text-gray-500">su 150+ recensioni</span>
+            <span className="font-bold text-xl text-gray-900">5.0/5</span>
+            <span className="text-gray-500">su Google Maps</span>
           </div>
         </div>
 
@@ -126,16 +126,16 @@ export default function Testimonials() {
         {/* Statistics */}
         <div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-600 mb-1">200+</div>
-            <div className="text-gray-600 text-sm">Clienti Soddisfatti</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">100+</div>
+            <div className="text-gray-600 text-sm">Traslochi Completati</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-600 mb-1">15+</div>
-            <div className="text-gray-600 text-sm">Anni di Esperienza</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">24/7</div>
+            <div className="text-gray-600 text-sm">Sempre Disponibili</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-600 mb-1">4.8/5</div>
-            <div className="text-gray-600 text-sm">Rating Medio</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">5.0/5</div>
+            <div className="text-gray-600 text-sm">Rating Google</div>
           </div>
         </div>
 
@@ -171,9 +171,8 @@ export default function Testimonials() {
 
               <div className="flex items-center space-x-2">
                 <span className="font-bold text-gray-900">Eccellente</span>
-                <span className="text-gray-500">4.8 su 5</span>
               </div>
-              <p className="text-gray-400 text-sm mt-1">Basato su 150+ recensioni</p>
+              <p className="text-gray-400 text-sm mt-1">Lascia una recensione</p>
             </a>
           </div>
         </div>
