@@ -1,8 +1,17 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" rx="12" fill="#2563EB"/>
-  <path d="M16 28L32 20L48 28V44H16V28Z" fill="white"/>
-  <rect x="20" y="30" width="6" height="8" fill="#2563EB"/>
-  <rect x="29" y="30" width="6" height="8" fill="#2563EB"/>
-  <rect x="38" y="30" width="6" height="8" fill="#2563EB"/>
-  <path d="M28 44V36H36V44H28Z" fill="#2563EB"/>
+  <!-- Moving truck body -->
+  <rect x="8" y="24" width="28" height="20" rx="2" fill="white"/>
+  <!-- Truck cab -->
+  <path d="M36 32H48C50.2091 32 52 33.7909 52 36V44H36V32Z" fill="white"/>
+  <!-- Cab window -->
+  <rect x="40" y="34" width="8" height="6" rx="1" fill="#2563EB"/>
+  <!-- Wheels -->
+  <circle cx="18" cy="46" r="5" fill="#1e40af"/>
+  <circle cx="18" cy="46" r="2" fill="white"/>
+  <circle cx="44" cy="46" r="5" fill="#1e40af"/>
+  <circle cx="44" cy="46" r="2" fill="white"/>
+  <!-- Box on truck -->
+  <rect x="12" y="28" width="10" height="10" fill="#f97316"/>
+  <path d="M12 28L17 26L22 28" stroke="#ea580c" strokeWidth="1"/>
 </svg>

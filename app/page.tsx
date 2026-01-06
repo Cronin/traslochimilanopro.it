@@ -111,8 +111,8 @@ export default function HomePage() {
                 },
                 {
                   step: '2',
-                  title: 'Intervento Rapido',
-                  description: 'I nostri tecnici certificati arrivano entro 30 minuti nelle zone di Como, attrezzatura professionale compresa e inclusa.',
+                  title: 'Sopralluogo Gratuito',
+                  description: 'Un nostro operatore valuta gli oggetti da traslocare e prepara un preventivo dettagliato senza impegno.',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -121,8 +121,8 @@ export default function HomePage() {
                 },
                 {
                   step: '3',
-                  title: 'Lavoro Garantito',
-                  description: 'Intervento professionale con garanzia scritta. Pagamento solo a lavoro completato e approvato.',
+                  title: 'Trasloco Completato',
+                  description: 'Trasporto sicuro, montaggio mobili nella nuova casa. Pagamento solo a lavoro completato.',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -151,7 +151,7 @@ export default function HomePage() {
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Zone Servite</h2>
               <p className="text-lg text-gray-600">
-                Operiamo in tutta Como e provincia con interventi rapidi
+                Operiamo in tutta Milano e Lombardia con interventi rapidi
               </p>
             </div>
 
@@ -191,6 +191,117 @@ export default function HomePage() {
         </section>
 
         <Testimonials />
+
+        {/* Google Maps & Reviews Section */}
+        <section id="dove-siamo" className="py-16 md:py-24 bg-white">
+          <div className="container-custom">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Dove Siamo</h2>
+              <p className="text-lg text-gray-600">
+                La nostra sede a Milano - Facilmente raggiungibile
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
+              {/* Google Maps Embed */}
+              <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.980888640392!2d9.165915799999999!3d45.4701889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1a648876375%3A0xdd9b044707ab1177!2sTraslochi%20Milano%20Pro!5e0!3m2!1sen!2sus!4v1767672107229!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Traslochi Milano Pro - Posizione"
+                />
+              </div>
+
+              {/* Google Reviews */}
+              <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
+                <div className="flex items-center space-x-3 mb-6">
+                  {/* Google Logo */}
+                  <svg className="w-6 h-6" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                  </svg>
+                  <span className="font-bold text-gray-900">Recensioni Google</span>
+                  <div className="flex items-center space-x-1 ml-auto">
+                    <span className="font-bold text-gray-900">4.8</span>
+                    <div className="flex">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Reviews List */}
+                <div className="space-y-4">
+                  {[
+                    {
+                      name: 'Antonio R.',
+                      rating: 5,
+                      date: '2 settimane fa',
+                      text: 'Trasloco perfetto! Squadra puntuale e professionale. Hanno imballato tutto con cura e montato i mobili nella nuova casa. Consigliato!',
+                    },
+                    {
+                      name: 'Chiara M.',
+                      rating: 5,
+                      date: '1 mese fa',
+                      text: 'Ottimo servizio per il trasloco del mio ufficio. Hanno lavorato nel weekend per non interrompere le attivita. Prezzo onesto.',
+                    },
+                    {
+                      name: 'Luca B.',
+                      rating: 5,
+                      date: '1 mese fa',
+                      text: 'Dovevo traslocare un pianoforte a coda, avevo paura. Sono arrivati con attrezzatura specifica, tutto perfetto!',
+                    },
+                  ].map((review, idx) => (
+                    <div key={idx} className="bg-white rounded-xl p-4 shadow-sm">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                          <span className="font-bold text-blue-600">{review.name.charAt(0)}</span>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-gray-900">{review.name}</p>
+                          <div className="flex items-center space-x-2">
+                            <div className="flex">
+                              {[...Array(review.rating)].map((_, i) => (
+                                <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                              ))}
+                            </div>
+                            <span className="text-sm text-gray-500">{review.date}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 text-sm">{review.text}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Link to Google Maps */}
+                <a
+                  href="https://maps.app.goo.gl/jQ2RtA3mCVesQScAA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center space-x-2 text-blue-600 font-semibold hover:text-blue-700"
+                >
+                  <span>Vedi tutte le recensioni su Google</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA Section - Split Layout */}
         <section id="preventivo" className="py-16 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700">
