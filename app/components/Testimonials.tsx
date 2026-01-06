@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const testimonials = [
   {
     name: 'Marco R.',
@@ -5,6 +7,7 @@ const testimonials = [
     rating: 5,
     text: 'Servizio impeccabile! Hanno traslocato tutto il mio appartamento in mezza giornata. Professionali, puntuali e molto attenti ai dettagli. Consigliatissimi!',
     service: 'Trasloco Residenziale',
+    avatar: '/images/avatar-marco.webp',
   },
   {
     name: 'Laura M.',
@@ -12,6 +15,7 @@ const testimonials = [
     rating: 5,
     text: 'Trasferimento ufficio senza intoppi. Hanno lavorato nel weekend per non interrompere la nostra attivita. Tutto perfetto, mobili rimontati alla perfezione.',
     service: 'Trasloco Ufficio',
+    avatar: '/images/avatar-laura.webp',
   },
   {
     name: 'Giuseppe B.',
@@ -19,6 +23,7 @@ const testimonials = [
     rating: 5,
     text: 'Ottimo rapporto qualita-prezzo. Il preventivo era chiaro e senza sorprese. Il team ha gestito anche il pianoforte con estrema cura. Bravissimi!',
     service: 'Trasloco con Pianoforte',
+    avatar: '/images/avatar-giuseppe.webp',
   },
   {
     name: 'Francesca T.',
@@ -26,6 +31,7 @@ const testimonials = [
     rating: 5,
     text: 'Trasloco urgente organizzato in 48 ore. Nonostante i tempi stretti, tutto e andato liscio. Imballaggio professionale e nessun danno. Super consigliati!',
     service: 'Trasloco Urgente',
+    avatar: '/images/avatar-francesca.webp',
   },
   {
     name: 'Alberto S.',
@@ -33,6 +39,7 @@ const testimonials = [
     rating: 5,
     text: 'Ho usufruito del servizio deposito per 3 mesi. Magazzino pulito e sicuro. Quando ho ritirato tutto era in perfette condizioni. Servizio eccellente.',
     service: 'Deposito e Custodia',
+    avatar: '/images/avatar-alberto.webp',
   },
   {
     name: 'Silvia P.',
@@ -40,20 +47,24 @@ const testimonials = [
     rating: 5,
     text: 'Trasloco internazionale verso la Svizzera gestito alla perfezione. Hanno curato tutte le pratiche doganali. Zero stress, massima professionalita.',
     service: 'Trasloco Internazionale',
+    avatar: '/images/avatar-silvia.webp',
   },
 ]
 
 export default function Testimonials() {
   return (
-    <section id="recensioni" className="section-padding bg-gray-50">
+    <section id="recensioni" className="py-16 md:py-24 bg-gray-50">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="heading-lg mb-4">Cosa Dicono i Nostri Clienti</h2>
-          <p className="text-xl text-gray-600">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Cosa Dicono i Nostri Clienti
+          </h2>
+          <p className="text-lg text-gray-600">
             La soddisfazione dei nostri clienti e la nostra priorita. Leggi le recensioni di chi ha gia scelto i nostri servizi.
           </p>
-          <div className="flex items-center justify-center space-x-2 mt-6">
+          {/* Rating summary */}
+          <div className="flex items-center justify-center space-x-3 mt-6">
             <div className="flex">
               {[1, 2, 3, 4, 5].map((i) => (
                 <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -61,17 +72,17 @@ export default function Testimonials() {
                 </svg>
               ))}
             </div>
-            <span className="font-bold text-2xl text-gray-900">4.8/5</span>
-            <span className="text-gray-600">su 150+ recensioni</span>
+            <span className="font-bold text-xl text-gray-900">4.8/5</span>
+            <span className="text-gray-500">su 150+ recensioni</span>
           </div>
         </div>
 
         {/* Testimonials grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-100"
             >
               {/* Stars */}
               <div className="flex mb-4">
@@ -88,39 +99,43 @@ export default function Testimonials() {
               </p>
 
               {/* Service badge */}
-              <div className="inline-block bg-primary-50 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              <div className="inline-block bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
                 {testimonial.service}
               </div>
 
-              {/* Author */}
+              {/* Author with avatar */}
               <div className="flex items-center space-x-3 pt-4 border-t border-gray-100">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-600 font-bold text-lg">
-                    {testimonial.name.charAt(0)}
-                  </span>
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.location}</div>
+                  <div className="text-sm text-gray-500">{testimonial.location}</div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Trust indicators */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
+        {/* Statistics */}
+        <div className="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 mb-2">150+</div>
-            <div className="text-gray-600">Clienti Soddisfatti</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">200+</div>
+            <div className="text-gray-600 text-sm">Clienti Soddisfatti</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 mb-2">20+</div>
-            <div className="text-gray-600">Anni di Esperienza</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">15+</div>
+            <div className="text-gray-600 text-sm">Anni di Esperienza</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 mb-2">4.8/5</div>
-            <div className="text-gray-600">Rating Medio</div>
+            <div className="text-4xl font-bold text-blue-600 mb-1">4.8/5</div>
+            <div className="text-gray-600 text-sm">Rating Medio</div>
           </div>
         </div>
       </div>
