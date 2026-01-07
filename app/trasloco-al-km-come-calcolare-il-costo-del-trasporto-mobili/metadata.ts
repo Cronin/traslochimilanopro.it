@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Trasloco al Km: Come Calcolare il Costo del Trasporto Mobili',
-  description: 'Guida completa al calcolo del costo trasloco al km a Milano. Tariffe chilometriche, preventivi, confronto km vs forfait e consigli per risparmiare. Chiama 379 172 1331',
+  description: 'Guida completa al calcolo del costo trasloco al km a Milano. Tariffe chilometriche, preventivi, confronto km vs forfait e consigli per risparmiare. Chiama 02 4070 2372',
   keywords: [
     'trasloco al km',
     'costo trasloco al km',

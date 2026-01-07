@@ -18,10 +18,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://traslochimilanopro.it'),
   title: {
-    default: 'Traslochi Milano Pro | Servizio 24/7 | 379 172 1331',
+    default: 'Traslochi Milano Pro | Servizio 24/7 | 02 4070 2372',
     template: '%s | Traslochi Milano Pro'
   },
-  description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 379 172 1331. Via Lodovico Ariosto, 19, Milano.',
+  description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 02 4070 2372. Via Lodovico Ariosto, 19, Milano.',
   keywords: [
     'traslochi milano',
     'ditta traslochi milano',
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'it_IT',
     url: 'https://traslochimilanopro.it',
-    title: 'Traslochi Milano Pro | Servizio 24/7 | 379 172 1331',
-    description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 379 172 1331.',
+    title: 'Traslochi Milano Pro | Servizio 24/7 | 02 4070 2372',
+    description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 02 4070 2372.',
     siteName: 'Traslochi Milano Pro',
     images: [
       {
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Traslochi Milano Pro | Servizio 24/7 | 379 172 1331',
-    description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 379 172 1331.',
+    title: 'Traslochi Milano Pro | Servizio 24/7 | 02 4070 2372',
+    description: 'Traslochi Milano 24/7. Servizio professionale per traslochi residenziali, uffici, internazionali. Preventivo gratuito. Chiama ora 02 4070 2372.',
   },
   robots: {
     index: true,

@@ -3,8 +3,8 @@ export const businessData = {
   legalName: 'Traslochi Milano Pro',
   domain: 'traslochimilanopro.it',
   email: 'info@traslochimilanopro.it',
-  phone: '379 172 1331',
-  phoneFormatted: '+393791721331',
+  phone: '02 4070 2372',
+  phoneFormatted: '+390240702372',
 
   address: {
     street: 'Via Lodovico Ariosto, 19',

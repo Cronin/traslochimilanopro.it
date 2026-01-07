@@ -4,8 +4,8 @@
   "setupDate": "2026-01-07",
   "status": "ACTIVE",
   "contact": {
-    "phone": "+39 379 172 1331",
-    "phoneFormatted": "+393791721331",
+    "phone": "+39 02 4070 2372",
+    "phoneFormatted": "+390240702372",
     "email": "info@traslochimilanopro.it",
     "address": "Via Lodovico Ariosto, 19, 20145 Milano MI"
   },
@@ -28,16 +28,17 @@
   },
   "conversionMethods": {
     "phone": {
-      "number": "+39 379 172 1331",
+      "number": "+39 02 4070 2372",
       "enabled": true,
       "trackingEvent": "phone_click",
       "locations": ["Hero CTA", "Header", "Footer", "Contact Section"]
     },
     "whatsapp": {
-      "number": "+393791721331",
-      "enabled": true,
+      "number": "+390240702372",
+      "enabled": false,
       "trackingEvent": "whatsapp_click",
-      "url": "https://wa.me/393791721331"
+      "url": "https://wa.me/390240702372",
+      "note": "WhatsApp disabilitato - numero fisso non supportato"
     },
     "email": {
       "address": "info@traslochimilanopro.it",
