@@ -26,14 +26,9 @@ export default function DitteTraslochiMilanoPage() {
             <p className="text-xl text-blue-100 mb-6">
               Guida completa per scegliere la ditta di traslochi affidabile, evitare truffe e ottenere il miglior servizio
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href={`tel:${businessData.phoneFormatted}`} onClick={() => trackConversion('phone_click', 'hero')} className="inline-flex items-center space-x-2 bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-colors">
-                <span>Chiama {businessData.phone}</span>
-              </a>
-              <a href={`https://wa.me/${businessData.phoneFormatted.replace(/\+/g, '')}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-colors">
-                <span>WhatsApp</span>
-              </a>
-            </div>
+            <a href={`tel:${businessData.phoneFormatted}`} onClick={() => trackConversion('phone_click', 'hero')} className="inline-flex items-center space-x-2 bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-colors">
+              <span>Chiama {businessData.phone}</span>
+            </a>
           </div>
 
           <div className="prose prose-lg max-w-none">
