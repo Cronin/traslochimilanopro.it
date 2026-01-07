@@ -1,0 +1,77 @@
+{
+  "domain": "traslochimilanopro.it",
+  "businessName": "Traslochi Milano Pro",
+  "setupDate": "2026-01-07",
+  "status": "ACTIVE",
+  "contact": {
+    "phone": "+39 379 172 1331",
+    "phoneFormatted": "+393791721331",
+    "email": "info@traslochimilanopro.it",
+    "address": "Via Lodovico Ariosto, 19, 20145 Milano MI"
+  },
+  "analytics": {
+    "searchConsole": {
+      "property": "sc-domain:traslochimilanopro.it",
+      "verified": true,
+      "verificationDate": "2026-01-07",
+      "serviceAccountAdded": true
+    },
+    "ga4": {
+      "propertyId": "",
+      "measurementId": "",
+      "status": "TO_CREATE"
+    },
+    "clarity": {
+      "projectId": "u1ur4kb2kq",
+      "status": "ACTIVE"
+    }
+  },
+  "conversionMethods": {
+    "phone": {
+      "number": "+39 379 172 1331",
+      "enabled": true,
+      "trackingEvent": "phone_click",
+      "locations": ["Hero CTA", "Header", "Footer", "Contact Section"]
+    },
+    "whatsapp": {
+      "number": "+393791721331",
+      "enabled": true,
+      "trackingEvent": "whatsapp_click",
+      "url": "https://wa.me/393791721331"
+    },
+    "email": {
+      "address": "info@traslochimilanopro.it",
+      "enabled": true,
+      "trackingEvent": "email_click"
+    },
+    "contactForm": {
+      "enabled": false,
+      "status": "PLANNED"
+    }
+  },
+  "seo": {
+    "sitemap": "https://traslochimilanopro.it/sitemap.xml",
+    "robots": "https://traslochimilanopro.it/robots.txt",
+    "mainKeyword": "traslochi milano",
+    "secondaryKeywords": [
+      "ditta traslochi milano",
+      "traslochi milano prezzi",
+      "traslochi economici milano",
+      "traslochi vicino a me"
+    ]
+  },
+  "dns": {
+    "registrar": "OpenProvider",
+    "cloudflare": {
+      "account": "24prontocom@gmail.com",
+      "zoneId": "f5b5ab84a024c10103a3f9a381dbcca1",
+      "status": "ACTIVE"
+    }
+  },
+  "hosting": {
+    "platform": "Vercel",
+    "connected": true
+  },
+  "createdAt": "2026-01-07T00:00:00.000Z",
+  "updatedAt": "2026-01-07T00:00:00.000Z"
+}
